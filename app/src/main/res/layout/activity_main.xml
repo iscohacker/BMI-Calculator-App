@@ -2,54 +2,63 @@
 
 <!--    Mehribon va rahimli Alloh nomi bilan boshlayman-->
 
-<LinearLayout
-
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@color/white"
+    android:fillViewport="true"
     tools:context=".MainActivity">
 
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="283dp"
-        android:src="@drawable/and"/>
-
-    <ImageView
-        android:layout_width="213dp"
-        android:layout_height="84dp"
-        android:layout_gravity="center"
-        android:src="@drawable/ddd"/>
-
-
-    <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="           BMI hisoblagich - bu dastur orqali siz   \n       o'z tanangizni vazningiz va bo'y o'lchamingiz \nbilan qanday xolatda ekanini bilib olishingiz mumkin"
-        android:textStyle="bold"
-        android:textSize="15sp"
-        android:layout_marginTop="70dp"
-        android:textColor="@color/black"/>
+        android:orientation="vertical">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_next"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="220dp"
-        app:cornerRadius="10dp"
-        android:backgroundTint="#091E6D"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        android:text="@string/boshlash"
-        app:strokeWidth="2dp"
-        app:strokeColor="#6ACBD8"
-        app:elevation="20dp"
-        android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="283dp"
+            android:src="@drawable/and" />
 
+        <ImageView
+            android:layout_width="213dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ddd" />
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="BMI hisoblagich - bu dastur orqali siz \no'z tanangizni vazningiz va bo'y o'lchamingiz \nbilan qanday xolatda ekanini bilib olishingiz mumkin."
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_next"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#091E6D"
+                android:text="@string/boshlash"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp"
+                app:elevation="20dp"
+                app:strokeColor="#6ACBD8"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

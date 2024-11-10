@@ -7,6 +7,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.widget.addTextChangedListener
@@ -17,13 +18,13 @@ class CalculatingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calculating)
 
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
         val editTextWeight: EditText = findViewById(R.id.editTextWeight)
         val editTextHeight: EditText = findViewById(R.id.editTextHeight)
         val buttonCalculate: Button = findViewById(R.id.buttonCalculate)
         val textViewResult: TextView = findViewById(R.id.textViewResult)
         val category: TextView = findViewById(R.id.category)
-
 
         editTextHeight.addTextChangedListener {
            if (editTextHeight.text.isBlank()){
@@ -40,8 +41,6 @@ class CalculatingActivity : AppCompatActivity() {
         }
 
         buttonCalculate.setOnClickListener {
-
-
             val weightStr = editTextWeight.text.toString()
             val heightStr = editTextHeight.text.toString()
 

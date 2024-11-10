@@ -1,70 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:gravity="center"
-    android:background="@drawable/fhg"
     android:layout_height="match_parent"
+    android:background="@drawable/fhg"
+    android:fillViewport="true"
     tools:context=".CalculatingActivity">
 
-    <EditText
-        android:id="@+id/editTextWeight"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="100dp"
-        android:hint="  Vazningiz (kg): "
-        android:inputType="numberDecimal"
-        android:background="#D4EFF6"
-        android:padding="5dp"
-        android:drawableStart="@drawable/kk"
-        android:layout_marginBottom="16dp" />
-
-    <EditText
-        android:id="@+id/editTextHeight"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:hint="  Bo'yingiz  (m): "
-        android:inputType="numberDecimal"
-        android:background="#D4EFF6"
-        android:padding="5dp"
-        android:drawableStart="@drawable/xaxa"
-        android:layout_marginBottom="16dp" />
-
-
-
-    <TextView
-        android:id="@+id/textViewResult"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text=""
         android:gravity="center"
-        android:textSize="18sp" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/category"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text=""
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"
-        android:textColor="#FF0000"
-        android:textSize="25sp"/>
+        <EditText
+            android:id="@+id/editTextWeight"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="16dp"
+            android:background="#D4EFF6"
+            android:drawableStart="@drawable/kk"
+            android:hint="  Vazningiz (kg): "
+            android:inputType="numberDecimal"
+            android:padding="5dp" />
 
+        <EditText
+            android:id="@+id/editTextHeight"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="#D4EFF6"
+            android:drawableStart="@drawable/xaxa"
+            android:hint="  Bo'yingiz  (m): "
+            android:inputType="numberDecimal"
+            android:padding="5dp" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonCalculate"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="100dp"
-        app:cornerRadius="8dp"
-        android:backgroundTint="#03A9F4"
-        android:text="@string/hisoblash" />
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18sp" />
 
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textColor="#FF0000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
-
-</LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCalculate"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="#03A9F4"
+            android:text="@string/hisoblash"
+            app:cornerRadius="8dp" />
+    </LinearLayout>
+</ScrollView>
