@@ -5,14 +5,9 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.core.widget.addTextChangedListener
-import com.example.bmihisoblagich.R
-import com.example.bmihisoblagich.databinding.ActivityCalculatingBinding
 
 class CalculatingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
