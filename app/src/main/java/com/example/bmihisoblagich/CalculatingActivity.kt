@@ -1,4 +1,4 @@
-package com.example.bmihisoblagich
+package uz.iskandarbek.bmihisoblagich
 
 import android.os.Bundle
 import android.widget.Button
@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.widget.addTextChangedListener
+import com.example.bmihisoblagich.R
 import com.example.bmihisoblagich.databinding.ActivityCalculatingBinding
 
 class CalculatingActivity : AppCompatActivity() {

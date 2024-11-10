@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.bmihisoblagich"
+    namespace = "uz.iskandarbek.bmihisoblagich"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.bmihisoblagich"
+        applicationId = "uz.iskandarbek.bmihisoblagich"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

@@ -1,4 +1,4 @@
-package com.example.bmihisoblagich
+package uz.iskandarbek.bmihisoblagich
 
 import android.content.Intent
 import android.os.Bundle
